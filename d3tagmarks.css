@@ -1,0 +1,56 @@
+
+.vizarea{
+    float: left;
+    width:70%;
+}
+
+.displaylinksarea{
+    float: left;
+}
+
+path.link {
+    fill: none;
+    stroke: #666;
+    stroke-width: 1.5px;
+}
+
+path.link.twofive {
+    opacity: 0.25;
+}
+
+path.link.fivezero {
+    opacity: 0.50;
+}
+
+path.link.sevenfive {
+    opacity: 0.75;
+}
+
+path.link.onezerozero {
+    opacity: 1.0;
+}
+
+circle {
+    fill: #699994;
+    stroke: #ced0c1;
+    stroke-width: 1.5px;
+}
+
+.selcircle {
+    fill: #a91818;
+    stroke: #b02524;
+
+}
+
+.seltext{
+    font-size: 20px;
+    font-style: normal;
+
+}
+
+text {
+//  fill: #000;
+    font: 14px sans-serif;
+    font-style: italic;
+    pointer-events: none;
+}

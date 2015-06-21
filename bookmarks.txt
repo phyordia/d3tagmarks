@@ -1,0 +1,22 @@
+title,url,tags
+sciKit-learn,http://scikit-learn.org/,Python;Machine Learning;Data Analysis
+R-project,http://www.r-project.org/,Statistics;Languages,Software;Data Analysis
+Matlab,http://www.mathworks.com/products/matlab/,Languages;Software;Data Analysis
+Octave,http://www.gnu.org/Software/octave/,Languages;Software;Data Analysis
+Tmux,http://tmux.github.io/,Tools;Linux
+GitHub,https://github.com/,Tools
+D3.js,http://d3js.org/,Visualization
+Pandas,http://pandas.pydata.org/,Python;Data Analysis
+SciPy,http://www.scipy.org/,Python;Tools;Data Analysis
+GnuPlot,http://www.gnuplot.info/,Tools;Linux;Visualization
+Python,https://www.Python.org/,Python;Languages
+word2vec,https://code.google.com/p/word2vec/,Machine Learning
+matplotlib,http://matplotlib.org/,Visualization;Python
+C++ Reference,http://www.cplusplus.com/reference/,C++;Languages
+ROOT,http://root.cern.ch,Data Analysis;C++
+MySQL,https://www.mysql.com/,Databases;SQL
+PostgreSQL,http://www.postgresql.org/,Databases;SQL
+SQLite,https://www.sqlite.org/,Databases;SQL
+Hadoop,https://hadoop.apache.org/,Computing
+Hive,https://hive.apache.org/,Computing;Databases;Storage
+Pig,https://pig.apache.org/,Computing;Data Analysis,Languages
