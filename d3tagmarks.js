@@ -17,9 +17,7 @@ function getIndex(nodes, tag){
 
 
 // get the data
-
-d3.csv("../../bookmarks.txt", function(data) {
-
+d3.csv("../../projects/d3tagmarks/bookmarks.txt", function(data) {
 
     var nodes = [];
     var links = [];
@@ -28,8 +26,6 @@ d3.csv("../../bookmarks.txt", function(data) {
     });
 
     xdata.forEach(function(d){
-        console.log("xxx "+d.title);
-        console.log(d.tags);
         // create a new node for each tag
         for(var t in d.tags){
             tag = d.tags[t];
@@ -54,7 +50,6 @@ d3.csv("../../bookmarks.txt", function(data) {
         for(var i=0; i<d.tags.length-1;i++){
             for(var j=1; j<d.tags.length;j++){
                 if(d.tags[i] == d.tags[j]) continue;
-                console.log( d.tags[i]+" - "+ d.tags[j]);
                 idxs = getIndex(nodes, d.tags[i]);
                 idxt = getIndex(nodes, d.tags[j]);
                 var ilink = {source:idxs, target:idxt};
@@ -66,8 +61,8 @@ d3.csv("../../bookmarks.txt", function(data) {
     });
 
 
-    console.log(links);
-
+    //console.log(links);
+    //console.log(links);
     var width = 600,
         height = 600;
 
@@ -170,13 +165,10 @@ d3.csv("../../bookmarks.txt", function(data) {
         var displaylinks = d3.select("#displaylinks");
 
         var selr = 10+8*d3.select(this).datum().links.length;
-        //console.log(r);
-        //console.log(d3.select(this).select("circle").attr("r"));
 
 //unselect the active circle
         var selc = d3.select(".selcircle");
         var rold = selc.empty() ? 1:10+3*selc.datum().links.length;
-        //console.log(rold);
         selc.classed("selcircle", false)
             .transition()
             .duration(500)
@@ -195,7 +187,7 @@ d3.csv("../../bookmarks.txt", function(data) {
 
 
 
-        links = d3.select(this).select("links").html();//.selectAll("a").each(function(d){console.log(d)});
+        links = d3.select(this).select("links").html();
 
         displaylinks.html("<h1>Links</h1><ul>"+links+"</ul>");
 
