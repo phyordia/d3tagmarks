@@ -130,7 +130,7 @@ d3.csv("../../projects/d3tagmarks/bookmarks.txt", function(data) {
                 }
             }
 
-            txt += "<li><a target=\"_blank\" href=\""+d.links[l].url+"\">"+d.links[l].name+" "+tags+"</a></li>";
+            txt += "<li><a target=\"_blank\" href=\""+d.links[l].url+"\"><strong>"+d.links[l].name+"</strong> "+tags+"</a></li>";
         }
         return txt;
     });

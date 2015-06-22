@@ -6,6 +6,11 @@
 
 .displaylinksarea{
     float: left;
+
+}
+
+.displaylinksarea ul {
+    list-style-type: none;
 }
 
 path.link {
